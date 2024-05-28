@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Ball For Cancer</title>
+</head>
+<body>
+    <div class="menubar">
+        <div class="logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+    </div>
+    <div class="text">
+        <h1>BALL FOR CANCER</h1>
+    </div>
+    <div class="profile-container">
+        <div class="profile-info">
+            <h2>Your Profile Information</h2>
+            <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+            <p><strong>Email Address:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Sex:</strong> <span id="displaySex"></span></p>
+            <p><strong>Why I Support This Campaign:</strong> <span id="displaySupportReason"></span></p>
+        </div>
+        <div class="thanks">
+            <h2>THANK YOU FOR <br> SUPPORTING</h2>
+            <h1>BALL FOR CANCER</h1>
+            <a href="index.html">BACK TO HOME</a>
+        </div>
+    </div>
+    <audio src="media/congrats.mp3" loop="true" autoplay="true"></audio>
+    
+    <script>
+        
+        document.getElementById('displayFirstName').innerText = localStorage.getItem('firstName');
+        document.getElementById('displayLastName').innerText = localStorage.getItem('lastName');
+        document.getElementById('displayEmail').innerText = localStorage.getItem('email');
+        document.getElementById('displaySex').innerText = localStorage.getItem('sex');
+        document.getElementById('displaySupportReason').innerText = localStorage.getItem('supportReason');
+    </script>
+</body>
+</html>

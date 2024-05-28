@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Ball For Cancer</title>
+</head>
+<body>
+    <div class="menubar">
+        <div class="logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+    </div>
+    <div class="text">
+        <h1>BALL FOR CANCER</h1>
+    </div>
+    <div class="sign">
+        <form id="signUpForm">
+            <label for="firstName">*First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">*Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label>*Sex:</label>
+            <input type="radio" id="male" name="sex" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="preferNotToSay" name="sex" value="preferNotToSay" required>
+            <label for="preferNotToSay">Prefer not to say</label><br><br>
+
+            <label for="email">*Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">*Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber"><br><br>
+
+            <label for="supportReason">*Why I support this campaign?:</label>
+            <textarea id="supportReason" name="supportReason" required></textarea><br><br>
+
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+    <audio src="media/meyes.mp3" loop autoplay></audio>
+
+    <script>
+        document.getElementById('signUpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let isValid = true;
+            const requiredFields = document.querySelectorAll('#signUpForm [required]');
+
+            requiredFields.forEach(function(field) {
+                if (!field.value) {
+                    field.classList.add('error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+
+            if (isValid) {
+                
+                localStorage.setItem('firstName', document.getElementById('firstName').value);
+                localStorage.setItem('lastName', document.getElementById('lastName').value);
+                localStorage.setItem('sex', document.querySelector('input[name="sex"]:checked').value);
+                localStorage.setItem('email', document.getElementById('email').value);
+                localStorage.setItem('supportReason', document.getElementById('supportReason').value);
+
+                
+                window.location.href = "index3.html";
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>

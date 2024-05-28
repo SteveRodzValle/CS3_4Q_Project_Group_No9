@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Basketball";
+    src: url(Basketball.otf);
+}
+
+* {
+    font-family: "Basketball";
+    font-weight: 900;
+    font-style: normal;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #000000;
+}
+
+body {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height:100%;
+    overflow-y: hidden;
+}
+
+.text h1 {
+    margin-top: 1vh;
+    font-size: 55px;
+    color: #bb2323;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.text p {
+    margin-top: 1vh;
+    font-size: 1.5em;
+    color: white;
+}
+
+.bg {
+    background-color: rgb(255, 255, 255);
+    margin-top: 15vh;
+    opacity: 1;
+    width: 30vw;
+    height: 50vh;
+    right: 35.5vw;
+    top: 20vh;
+    position: absolute;
+    z-index: -2;
+}
+
+.buttoncontainer {
+    margin-top: 8vh;
+    color: #979797;
+}
+
+.buttoncontainer h2 {
+    font-size: 75px;
+    color: rgb(0, 0, 0);
+}
+
+.buttoncontainer p {
+    color: #979797;
+    font-size: 20px;
+}
+
+.buttoncontainer h1 {
+    text-decoration: underline;
+    font-size: 2em;
+    color: #000000;
+}
+
+.buttoncontainer img {
+    right: 37vw;
+    top: 62vh;
+    position: absolute;
+}
+
+.buttoncontainer a {
+    text-decoration: none;
+    font-family: "basketball";
+    font-size: 1.5em;
+    background-color: #ffcd04;
+    transition: 0.4s;
+    opacity: 1;
+    margin: 1px;
+    font-weight: 700;
+    padding: 10px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.buttoncontainer a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #bb2323;
+}
+.container h1 {
+    font-family: Impact;
+    font-size: xx-large;
+}
+
+.text h1 {
+    margin-top: 1vh;
+    font-size: xxx-large;
+    color: #bb2323;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.sign {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.sign label {
+    display: inline-block; /* Changed */
+    margin-bottom: 8px;
+    font-size: medium;
+    vertical-align: middle; /* Added */
+}
+
+.sign input[type="radio"] {
+    display: inline-block; /* Changed */
+    margin-right: 10px;
+    vertical-align: middle; /* Added */
+}
+
+.sign input[type="text"],
+.sign input[type="email"],
+.sign input[type="password"],
+.sign input[type="tel"],
+.sign textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Basketball";
+    font-size: medium;
+}
+
+.sign button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign button:hover {
+    background-color: #0056b3;
+}
+
+.sign .error {
+    border-color: red;
+}
+
+audio {
+    display: none;
+}
+
+.sign input[type="password"] {
+    font-family: 'Courier New', Courier, monospace;
+}
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+
+.profile-info, .thanks {
+    background-color: #ffffff;
+    width: 40%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2, .thanks h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.profile-info p, .thanks p {
+    margin-bottom: 10px;
+    font-size: 1000000 px;
+}
+
+.thanks h1 {
+    color: rgb(230, 60, 173);
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.thanks a {
+    text-decoration: none;
+    display: block;
+    background-color: #ffcd04;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.thanks a:hover {
+    background-color: #bb2323;
+    color: white;
+}
+
