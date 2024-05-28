@@ -131,16 +131,16 @@ body {
 }
 
 .sign label {
-    display: inline-block; /* Changed */
+    display: inline-block; 
     margin-bottom: 8px;
     font-size: medium;
-    vertical-align: middle; /* Added */
+    vertical-align: middle; 
 }
 
 .sign input[type="radio"] {
-    display: inline-block; /* Changed */
+    display: inline-block; 
     margin-right: 10px;
-    vertical-align: middle; /* Added */
+    vertical-align: middle; 
 }
 
 .sign input[type="text"],
